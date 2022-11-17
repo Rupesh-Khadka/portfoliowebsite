@@ -1,0 +1,1139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --var-transition: all .4s ease;
+
+    
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.container {
+    width: 80%;
+}
+
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s ;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: none;
+    }
+}
+
+/* LANDING PAGE STYLE STARTS FROM HERE */
+.background {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+    height: 750px;
+}
+.first-landing-page {
+    background-color: rgba(10, 10, 10, 0.986);
+    position: relative;
+    
+}
+.second-landing-page {
+    background-color: rgba(41, 39, 39, 0.936);
+    opacity: 1;
+    
+}
+
+/* LANGING PAGE LEFT SECTION STARTS FROM HERE */
+.firstimage {
+    position: absolute;
+    top: 140px;
+    width: 400px;
+    left: 150px;
+}
+.heading {
+    color: #ffff;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+.heading h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* LANGING PAGE LEFT SECTION ENDS FROM HERE */
+
+.navbar {
+    position: absolute;
+    top: 28px;
+    right: 120px;
+}
+.navbar ul {
+    display: flex;
+    gap: 4rem;
+}
+.navbar ul li {
+    list-style: none;
+    
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    transition: var(--var-transition);
+}
+.contact-image {
+    z-index: 12;
+}
+.navbar ul li a:hover {
+    opacity: 0.7;
+}
+.home-text-content {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    color: #ffff;
+}
+.home-text-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 20px 0;
+}
+.opacity {
+    opacity: 0.5;
+}
+/* LANDING PAGE RIGHT SECTION STARTS FROM HERE */
+
+
+/* LANDING PAGE RIGHT SECTION ENDS FROM HERE */
+/* LANDING PAGE STYLE ENDS FROM HERE */
+
+/* ABOUT ME PAGE STARTS FROM HERE */
+/* LEFT-ABOUT-US PAGE STARTS FROM HERE */
+.about-us {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 600px;
+}
+.left-about-us {
+    background-color: #fff3e4;
+    padding: 30px;
+}
+.left-about-us h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 45px;
+    line-height: 45px;
+    color: rgb(7, 7, 7);
+    margin:10px 0px 15px;
+    font-weight: 800;
+    
+}
+.left-about-us p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 10px 0;
+    font-size: 18px;
+    color:rgba(24, 23, 23, 0.767);
+    padding: 20px 0;
+    padding-right: 80px;
+    
+}
+.left-about-us .button {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+    color: black;
+    transition: var(--var-transition);
+}
+.left-about-us .button::before {
+    content: " ";
+    background-color: rgba(63, 62, 62, 0.824);
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    height: 2px;
+    
+}
+.left-about-us a:hover {
+    color: rgb(43, 43, 43);
+}
+/* LEFT-ABOUT-US PAGE ENDS FROM HERE */
+
+/* RIGHT-ABOUT-US PAGE STARTS FROM HERE */
+.right-about-us {
+    background-image: url("../images/landingimage.jpg");
+    background-position: center;
+    background-size: cover; 
+    height: 100%;
+    width: 100%;
+
+}
+.about-us-image {
+    width: 80%;
+    z-index: 1;
+    filter: drop-shadow(2px 4px 8px #585858);
+}
+.right-service {
+
+    overflow: hidden;
+}
+
+
+.right-div-o {
+    transform: translateX(1100px);
+}
+/* RIGHT-ABOUT-US PAGE ENDS FROM HERE */
+/* ABOUT ME PAGE ENDS FROM HERE */
+
+
+/* SERVICE PAGE STARTS FROM HERE */
+.my-services{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    height: 900px;
+    padding-top: 200px;
+    place-items: center;
+ background-color: rgba(21, 20, 20, 0.925);
+
+
+}
+/* left service */
+
+.left-service {
+    display: grid;  
+}
+.sIcon {
+    text-align: center;
+    font-size: 100px;
+    padding: 30px 80px;
+}
+
+.imgIcon3 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+.imgIcon3 i {
+    
+    animation: rotater 10s linear infinite;
+}
+@keyframes rotater {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+
+    }
+    
+}
+.smooth {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-snap-align: start;
+}
+
+
+
+.imgIcon2{
+    transition-delay: .3s;
+    color: #c6b058;
+}
+.imgIcon1{
+    color: #1e43d8;
+    transition-delay: .4s;
+}
+.imgIcon3{
+    color: #2fc4e6;
+    transition-delay: .5s;
+}
+.imgIcon4{
+    color: #e5d544;
+    transition-delay: .6s;
+}
+.imgIcon5{
+    transition-delay: .7s;
+    color: #e23779;
+}
+.hidden1 {
+    transition-delay: .3s;
+}
+.hidden2 {
+    transition-delay: .4s ;
+}
+.hidden3 {
+    transition-delay: .5s;
+}
+.hidden4 {
+    transition-delay: .6s;
+}
+
+/* right service */
+
+.right-service {
+    padding: 80px 100px;
+    color: rgb(231, 234, 237);
+    
+}
+.right-service h3 {
+    font-family: 'PT Serif', serif;
+    color: #689AF8;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.right-service h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    color: #ffffff;
+    line-height: 44px;
+    margin: 20px 0;
+    font-weight: 700;
+}
+.right-service p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18.2px;
+    line-height: 24px;
+    margin: 10px 0;
+    font-weight:300;
+    color: #999999;
+    padding-right: 80px;
+}
+
+
+/* SERVICE PAGE ENDS FROM HERE */
+/* PROJECT PAGE STARTS FROM HERE */
+
+
+.my-project {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 50% 50%;
+}
+.project-img {
+    width: 223px;
+    height: 272px;
+    filter: drop-shadow(2px 4px 8px #585858);
+
+}
+
+
+
+/* left project  */
+.box {
+    height: 600px;
+    border: 1px solid rgba(27, 25, 25, 0.938);
+    width: 100%;
+}
+.box .main-box {
+    width: 100%;
+    margin: 0 50%;
+
+}
+.project-bg{
+    width: 100px;
+    height: 5px;
+    background-color: rgba(142, 139, 139, 0.769);
+    border-radius: 20px;
+    margin: 25px 0;
+}
+.main-box h1 {
+    margin: 25px 0;
+    font-size: 25px;
+    line-height: 41px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.main-box h1 a {
+    text-decoration: none;
+    color:    #000000;
+
+}
+.main-box p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+.box  {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.box1{
+
+    background-color: rgba(255,225,219,.6);
+}
+.box2{
+    background-color:  rgba(245,229,211,.8);
+}
+.box3{
+    background-color:  rgba(242,209,218,.5);
+    height: 350px;
+}
+.box3 .main-box {
+    display: flex;
+    gap: 3rem;
+}
+.box4{
+    background-color: #fff9ea;
+}
+.box5{
+    background-color: rgba(225,234,243,.6);
+}
+.box6 {
+    background-color: rgba(225,243,242,.6);
+}
+/* PROJECT PAGE ENDS FROM HERE */
+
+/*  CONTACT ME PAGE STARTS FROM HERE */
+
+.contact-me {
+    width: 100%;
+    background-color:#000000;
+    text-align: center;
+    position: relative;
+    height: 700px;
+    
+}
+.contact-content {
+    padding: 100px 200px;
+    height: 300px;
+    text-align: center;
+    margin: auto 0;
+}
+.contact-content h3 {
+        font-family: 'PT Serif', serif;
+        color: #689AF8;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+   
+    .contact-content h1 {
+        
+        font-family: 'Poppins', sans-serif;
+        font-size: 38px;
+        color: #ffffff;
+        line-height: 44px;
+        margin: 20px 0 10px;
+        font-weight: 700;
+        
+    } 
+    .contact-content .contact-p {
+    font-family: 'Montserrat', sans-serif;
+    
+    color: #999999;
+    font-size: 18.2px;
+    line-height: 24px;
+    margin: 20px 0;
+}
+ .number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    width: 100%;
+    margin: 18px 0;
+    font-weight: 400;
+    color:#FFFFFF;
+}
+.number p {
+    border-bottom: 3px solid #689AF8;
+    padding: 12px 0;
+    display: inline-block;
+}
+
+.contact-content .contact-n .fa-mobile-button {
+    font-size: 20px;
+    color: #689AF8;
+}
+.contact-span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18.2px;
+    color:#DFDEDE;
+    line-height: 24px;
+    font-weight: 500;
+}
+.contact-image {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 80px;
+    opacity: .3;
+    left: 80px;
+}
+.lasth {
+      
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #ffffffb6;
+    line-height: 40px;
+    font-weight: 400;
+    margin-top: 300px;
+
+}
+/* progress bar */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8px;
+    background: linear-gradient(to right, #ff5f6d,#ffc371);
+    z-index: 100;
+    transition: width 0.2s ease-out;
+}
+/*  CONTACT ME PAGE ENDS FROM HERE */
+@media only screen and (max-width: 1265px){
+    .my-services{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        height: 700px;
+        padding: 30px;
+        background-color: rgba(21, 20, 20, 0.925);
+    
+    
+    }
+    .left-service {
+        display: grid;  
+        padding:  10px;  
+    }
+    
+    .right-service p {
+        padding-right: 0px;
+    
+    }
+    .left-about-us p {
+        padding-right: 0px;
+    
+    }
+    /* right service */
+    .right-service {
+        padding: 80px 100px;
+        color: rgb(231, 234, 237);
+        
+    }
+    .sIcon {
+        font-size: 70px;
+        padding: 20px 60px;
+    }
+  
+    }
+  
+   
+
+
+
+
+/* MEDIA QUERY STARTS FROM HERE--MIDDLE GADGETS */
+
+@media only screen and (max-width: 970px) {
+   
+    .heading h1 {
+        font-size: 22px;
+    }
+    .firstimage {
+        top: 140px;
+        width: 400px;
+        left: 100px;
+    }
+    
+    /* LANGING PAGE LEFT SECTION ENDS FROM HERE */
+    .home-text-content {
+        position: absolute;
+        top: 200px;
+        left: 450px;
+        color: #ffff;
+    }
+  
+    .navbar ul {
+        gap: 3.5rem;
+    }
+    
+  
+    .home-text-content h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 8px 0;
+        padding: 16px 0;
+    }
+    
+  
+  .about-us {
+      grid-template-columns: 50% 50%;
+      width: 100%;
+      height: 600px;
+  }
+  .left-about-us {
+      padding: 30px;
+  }
+  .left-about-us h1 {
+      font-family: 'PT Serif', serif;
+      font-size: 45px;
+      line-height: 45px;
+      color: rgb(7, 7, 7);
+      margin:10px 0px 15px;
+      font-weight: 800;
+      
+  }
+  .left-about-us p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      line-height: 25px;
+      margin: 10px 0;
+      font-size: 18px;
+      color:rgba(24, 23, 23, 0.767);
+      padding: 20px 0;
+      
+  }
+   .left-about-us .button {
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      position: relative;
+      color: black;
+      transition: var(--var-transition);
+  }
+  .left-about-us .button::before {
+      content: " ";
+      background-color: rgba(63, 62, 62, 0.824);
+      position: absolute;
+      width: 100%;
+      top: 20px;
+      height: 2px;
+       
+  }
+  .left-about-us a:hover {
+      color: rgb(43, 43, 43);
+  }
+}
+/* LEFT-ABOUT-US PAGE STARTS FROM HERE */
+/* LEFT-ABOUT-US PAGE ENDS FROM HERE */
+
+/* RIGHT-ABOUT-US PAGE STARTS FROM HERE */
+.right-about-us {
+    background-image: url("../images/landingimage.jpg");
+    background-position: center;
+    background-size: cover;  
+
+}
+.about-us-image {
+    width: 90%;
+    margin: auto ;
+    padding-top: 50px;
+}
+
+
+/* RIGHT-ABOUT-US PAGE ENDS FROM HERE */
+/* ABOUT ME PAGE ENDS FROM HERE */
+
+
+
+.left-service {
+    display: grid;  
+    padding: 30px; 
+    padding: 70px 0;  
+}
+.sIcon {
+    text-align: center;
+    font-size: 90px;
+}
+
+.imgIcon3 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+
+/* right service */
+.right-service {
+    padding: 60px 80px;
+    
+}
+
+.right-service h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin: 16px 0;
+}
+.right-service p {
+    font-size: 18.2px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+
+/* SERVICE PAGE ENDS FROM HERE */
+
+
+
+
+/* MEDIA QUERY ENDS FROM HERE--SMALL GADGETS */
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+       }
+    .background {
+        display: initial ;
+    }
+    .first-landing-page {
+        background-color: none;
+        position: static;
+        
+    }
+    .second-landing-page {
+        background-color: none;
+         
+    }
+    
+    /* LANGING PAGE LEFT SECTION STARTS FROM HERE */
+    .firstimage {
+        position: static;
+        width: 100%;
+    }
+    .heading {
+        color: #ffff;
+        position: static;
+        padding: 25px 0;
+        margin-left: 20px ;
+    }
+    .heading h1 {
+        font-family: 'Major Mono Display', monospace;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    /* LANGING PAGE LEFT SECTION ENDS FROM HERE */
+    
+    .navbar {
+        position: absolute !important;
+        background: rgb(28, 27, 27);
+        top: 73px;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        transform: translateY(-200%);
+        transition: var(--var-transition);
+        
+    }
+    .active {
+        transform: translateY(0);
+    }
+    .navbar ul {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .navbar ul li {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        text-align: center;
+        padding: 30px 0;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.619);
+    }
+    .navbar ul li a {
+        font-size: 20px;
+
+    }
+    
+    .home-text-content {
+        position: static;
+        padding: 20px;
+    }
+    .home-text-content h1 {
+        font-size: 30px;
+        line-height: 23px;
+        font-weight: 300;
+        margin: 0;
+        padding: 18px ;
+    }
+    .menu {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+   .one{
+    width: 30px;
+    margin: 4px 0;
+    height: 5px;
+    background-color: rgba(199, 204, 209, 0.918);
+}
+   .two{
+    width: 20px;
+    margin-left: 4px;
+    height: 4px;
+    background-color: rgba(199, 204, 209, 0.918);
+    
+}
+.three{
+    width: 30px;
+    margin: 4px 0;
+    height: 5px;
+    background-color: rgba(199, 204, 209, 0.918);
+    
+}
+/* LEFT-ABOUT-US PAGE STARTS FROM HERE */
+.about-us {
+    grid-template-columns: none;
+    width: 100%;
+    height: auto;
+    
+}
+.left-about-us {
+    padding: 23px;
+}
+.left-about-us h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgb(7, 7, 7);
+    margin:10px 0px 15px;
+    font-weight: 800;
+    
+}
+.left-about-us p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 10px 0;
+    font-size: 16px;
+    color:rgba(24, 23, 23, 0.767);
+    padding: 20px 0;
+    
+}
+.left-about-us .button {
+    text-decoration: none;
+
+}
+
+
+.about-us-image {
+    width: 95%;
+    padding: 10px;
+}
+
+
+/* LEFT-ABOUT-US PAGE ENDS FROM HERE */
+/* SERVICE PAGE STARTS FROM HERE */
+.my-services{
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(21, 20, 20, 0.925);
+
+}
+/* left service */
+
+.left-service {
+    display: grid;  
+    
+}
+.sIcon {
+    text-align: center;
+    font-size: 90px;
+    padding-right: 120px;
+}
+
+.imgIcon3 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+
+/* right service */
+.right-service {
+    padding: 60px 20px;
+    
+}
+.right-service h3 {
+    font-size: 16px;
+}
+
+.right-service h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin: 16px 0;
+    color: #ffffff;
+}
+.right-service p {
+    font-size: 18.2px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+
+/* SERVICE PAGE ENDS FROM HERE */
+.my-project {
+    display: block;
+}
+.box {
+    height: auto;
+    padding: 29px;
+}
+.box4 .main-box{
+    flex-direction: row;
+}
+.box3 .main-box{
+    display: block;
+}
+.project-img {
+    width: 100%;
+    height: 300px;
+}
+.box  {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+}
+.box .main-box {
+    width: 100%;
+    margin: 0 ;
+
+}
+.main-box h1 {
+    font-size: 20px;
+    line-height: 41px;
+}
+
+.main-box p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/*  contact page */
+.contact-me {
+    text-align: center;
+    height: fit-content;
+    
+}
+.contact-content {
+    padding: 50px 20px;
+    height: auto;
+    text-align: center;
+    margin: auto 0;
+}
+.contact-content h3 {
+        font-weight: 700;
+    }
+   
+    .contact-content h1 {
+                font-size: 30px;
+    } 
+    .contact-content .contact-p {
+    text-align: justify;
+    font-size: 15.2px;
+    padding: 10px 20px;
+}
+ .number {
+    font-size: 15px;
+    margin: 18px 0;
+}
+.number p {
+    padding: 12px 0;
+    display: inline-block;
+}
+
+.contact-content .contact-n .fa-mobile-button {
+    font-size: 20px;
+}
+.contact-span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.2px;
+    color:#DFDEDE;
+}
+.lasth {
+      
+    font-size: 22px;
+    margin-top: 80px;
+
+}
+  }
+  @media only screen and (max-width: 450px) {
+    .menu {
+        top: 25px;
+    }
+    .one{
+        width: 30px;
+        margin: 4px 0;
+        height: 4px;
+        background-color: rgba(199, 204, 209, 0.918);
+    }
+       .two{
+        width: 20px;
+        margin-left: 4px;
+        height: 2px;
+        background-color: rgba(199, 204, 209, 0.918);
+        
+    }
+    .three{
+        width: 30px;
+        margin: 4px 0;
+        height: 4px;
+        background-color: rgba(199, 204, 209, 0.918);
+        
+    }
+    .heading h1 {
+        font-size: 20px;
+    }
+    .home-text-content h1 {
+        font-size: 25px;
+        line-height: 22px;
+        font-weight: 300;
+        margin: 0;
+        padding: 10px ;
+    }
+    .navbar {
+        top: 70px;
+        
+    }
+    .left-about-us h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin:10px 0px 15px;
+        font-weight: 800;
+        
+    }
+    .left-about-us p {
+        font-weight: 400;
+        line-height: 25px;
+        margin: 10px 0;
+        font-size: 16px;
+        
+    }
+    .left-about-us .button {
+        text-decoration: none;
+    
+    }
+    .left-service {
+       padding: 10px;        
+    }
+    .sIcon {
+        text-align: center;
+        font-size: 50px;
+        padding: 10px 50px;
+    }
+    .right-service h3 {
+        font-size: 14px;
+    }
+    .right-service {
+        padding: 15px;
+    }
+    
+    .right-service h1 {
+        font-size: 28px;
+        line-height: 40px;
+        margin: 16px 0;
+        color: #ffffff;
+    }
+    .right-service p {
+        font-size: 16.2px;
+        line-height: 24px;
+        margin: 10px 0;
+        
+    }
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+    .box .main-box {
+        width: 100%;
+        margin: 0 ;
+    
+    }
+    .main-box h1 {
+        font-size: 18px;
+    }
+    .main-box p {
+        font-size: 12px;
+    }
+    
+/*  contact page */
+.contact-me {
+    text-align: center;
+    height: fit-content;
+    
+}
+.contact-content {
+    padding: 50px 10px;
+    height: auto;
+    text-align: center;
+    margin: auto 0;
+}
+.contact-content h3 {
+        font-weight: 700;
+    }
+   
+    .contact-content h1 {
+                font-size: 25px;
+    } 
+    .contact-content .contact-p {
+    text-align: justify;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+ .number {
+    font-size: 14px;
+    margin: 18px 0;
+}
+.number p {
+    padding: 12px 0;
+    display: inline-block;
+}
+
+.contact-content .contact-n .fa-mobile-button {
+    font-size: 18px;
+}
+.contact-span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#DFDEDE;
+}
+.lasth {
+      
+    font-size: 16px;
+    margin-top: 80px;
+
+}
+.contact-image {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 80px;
+    opacity: .3;
+    left: 60px;
+}
+  }
+/* MEDIA QUERY ENDS FROM HERE--SMALL GADGETS */
