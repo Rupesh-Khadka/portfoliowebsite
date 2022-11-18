@@ -36,11 +36,12 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <section class="smooth" id="home">
+  <body class="fade__out fade__transition ">
+    <section class="smooth length" id="home">
 
-      <!-- LANDING PAGE STARTS FROM HERE -->
-      <section class="landing-page">
+        
+        <!-- LANDING PAGE STARTS FROM HERE -->
+      <section class="landing-page ">
       <div class="background">
         <div class="first-landing-page">
           <div class="container">
@@ -48,7 +49,7 @@
               <h1>Rupesh</h1>
             </div>
             <div class="firstimage">
-              <img src="./images/firstimage.jpg" alt="" />
+              <img  src="./images/firstimage.jpg"  alt="" />
             </div>
           </div>
         </div>
@@ -59,31 +60,35 @@
               <div class="span two"></div>
               <div class="span three"></div>
             </div>
+            <div class="close-menu">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
 
-            <div class="navbar">
+            <div class="navbar ">
               <nav>
                 <ul>
                   <li class="listItem"><a href="#about">About</a></li>
-                  <li class="listItem"><a href="#serviceb">Service</a></li>
+                  <li class="listItem"><a href="#service">Service</a></li>
                   <li class="listItem"><a href="#project">Project</a></li>
                   <li class="listItem"><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
-            <div class="home-text-content">
+            <div class="home-text-content container">
               <h1>I am Rupesh</h1>
               <h1>Khadka.</h1>
               <h1>A Front End Developer</h1>
               <h1 class="opacity">based in Nepal.</h1>
+              <button class="buttons">Get Connected</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- LANDING PAGE ENDS FROM HERE -->
+        </section>
+       <!-- LANDING PAGE ENDS FROM HERE -->
 
-    <!-- ABOUT US PAGE STARTS FROM HERE -->
-    <section id="about" class="about-us smooth">
+      <!-- ABOUT US PAGE STARTS FROM HERE -->
+      <section id="about" class="about-us smooth">
       <div class="left-about-us">
         <div class="left-div">
 
@@ -108,12 +113,12 @@
           <img src="./images/rupesh.jpg" alt="" />
         </div>
       </div>
-    </section>
+      </section>
 
-    <!-- ABOUT US ENDS STARTS FROM HERE -->
-    <!-- MY SERVICE SECTION STARTS FROM HERE -->
+      <!-- ABOUT US ENDS STARTS FROM HERE -->
+      <!-- MY SERVICE SECTION STARTS FROM HERE -->
 
-    <section id="service" class="my-services smooth">
+      <section id="service" class="my-services smooth">
       <div class="left-service">
         <div class="imgIcon1 sIcon hidden">
           <i class="fa-brands fa-css3-alt"></i>
@@ -146,12 +151,12 @@
           </p>
         </div>
       </div>
-    </section>
-    <!-- MY SERVICE SECTION ENDS FROM HERE -->
+        </section>
+        <!-- MY SERVICE SECTION ENDS FROM HERE -->
 
-    <!-- MY PROJECT SECTION STARTS FROM HERE -->
+          <!-- MY PROJECT SECTION STARTS FROM HERE -->
 
-    <section id="project" class="my-project smooth">
+        <section id="project" class="my-project smooth">
       <div class="left-my-project">
         <div class="box1 box">
           <div class="main-box">
@@ -236,12 +241,12 @@
 
 
       </div>
-    </section>
-    <!-- MY PROJECT SECTION ENDS FROM HERE -->
+      </section>
+      <!-- MY PROJECT SECTION ENDS FROM HERE -->
 
-    <!-- CONTACT SECTION STARTS FROM HERE -->
+      <!-- CONTACT SECTION STARTS FROM HERE -->
 
-    <section id="contact" class="contact-me smooth">
+      <section id="contact" class="contact-me smooth">
       <div class="contact-image">
         <img class="image" src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
       </div>
@@ -256,10 +261,11 @@
           </div>
         </div>
         <h1 class="lasth"> Rupesh Khadka</h1>
+      </section>
+    
+      <div id="progress-bar"></div>
+    
     </section>
-   
-    <div id="progress-bar"></div>
-  </section>
     <!-- CONTACT SECTION ENDS FROM HERE -->
 
     <script src="script.js"></script>

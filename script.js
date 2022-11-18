@@ -1,12 +1,31 @@
+const body = document.querySelector('body');
+
+const fade = ()=>{
+    setTimeout(() => {
+        body.classList.toggle('fade__out');
+    }, 1000);
+}
+
+body.addEventListener('load', fade());
+
+
 // JS FOR TOGGLE MENU
 
 const hamburger = document.querySelector(".menu");
+const homePage = document.querySelector(".landing-page");
 const navbar = document.querySelector(".navbar");
-
+const closeMenu = document.querySelector('.close-menu')
 hamburger.addEventListener('click', ()=>{
-    navbar.classList.toggle('active')
+    closeMenu.style.display = 'block';
+    hamburger.style.display = 'none';
 })
-
+closeMenu.addEventListener('click', ()=>{
+    closeMenu.style.display = 'none';
+    hamburger.style.display = 'block';
+})
+homePage.addEventListener('click',()=>{
+    navbar.classList.toggle('active');
+})
 
 //  FOR PROGRESSBAR
 
@@ -41,5 +60,5 @@ window.addEventListener('scroll', ()=> {
     let offSetY = window.scrollY;
     
     leftAbout.style.transform = `translateX(calc(700px - ${offSetY}px))`
-    rightDiv.style.transform = `translateX(calc(1600px - ${offSetY}px))`
+    // rightDiv.style.transform = `translateX(calc(1600px - ${offSetY}px))`
 })
